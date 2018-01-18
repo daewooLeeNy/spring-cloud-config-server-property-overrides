@@ -36,8 +36,8 @@ spring.cloud.config.server.native.searchLocations=classpath:/config-repo
 ```
 [bootstrap.yml](/src/resources/bootstrap.xml)
 
-client project를 이용 해서 local properties가 정상적으로 처리 되는지 확인 합니다.
-[spring-cloud-client-overrides]()
+client project를 이용 해서 local properties가 정상적으로 처리 되는지 확인 합니다.\
+[spring-cloud-client-overrides](https://github.com/daewooLeeNy/spring-cloud-config-client-property-overrides)
 
 ## 참고
 - http://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.0.0.M5/single/spring-cloud-config.html#_property_overrides
