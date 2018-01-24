@@ -2,12 +2,16 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native
+    active: custom, jdbc
+    ## if the 'native' profile has in active property, you can test the encrypt value.
+    ## native does not support in multiple profile
+#    active: native
   cloud:
     config:
       server:
         native:
           searchLocations: classpath:/config-repo
+          order: 1
 #        git:
 #          uri: file://${HOME}/config-repo
 #          uri: https://github.com/spring-cloud-samples/config-repo
@@ -17,4 +21,5 @@ spring:
           # this example repo is hosting both the code and the configs, we're
           # isolating the configuration files into their own directory.
 #          searchPaths: server-config
-
+encrypt:
+  key: test123111
